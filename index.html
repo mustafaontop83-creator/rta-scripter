@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTA Scripter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">
+      <span class="brand-mark">RTA</span>
+      <span>RTA <b>Scripter</b></span>
+    </a>
+    <nav>
+      <a href="#scripts">السكربتات</a>
+      <a href="#about">عن الموقع</a>
+    </nav>
+    <a class="discord" href="https://discord.gg/rta" target="_blank" rel="noopener">Discord</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="glow"></div>
+      <div class="hero-content">
+        <div class="badge">RTA SCRIPT LIBRARY</div>
+        <h1>كل سكربتاتك<br><span>في مكان واحد.</span></h1>
+        <p>مكتبة RTA Scripter لعرض سكربتاتك وترتيبها والبحث عنها ونسخها بسرعة.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#scripts">تصفح السكربتات</a>
+          <a class="secondary" href="https://discord.gg/rta" target="_blank" rel="noopener">مجتمع RTA</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="terminal-top"><i></i><i></i><i></i><span>RTA_Scripter.lua</span></div>
+        <pre><code>loadstring(game:HttpGet(
+  "YOUR_SCRIPT_URL"
+))()</code></pre>
+      </div>
+    </section>
+
+    <section id="scripts" class="scripts-section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">LIBRARY</span>
+          <h2>السكربتات</h2>
+        </div>
+        <div class="stats"><span id="count">0</span> سكربت</div>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="ابحث عن سكربت أو لعبة...">
+        </div>
+        <div id="categories" class="categories"></div>
+      </div>
+
+      <div id="grid" class="grid"></div>
+      <div id="empty" class="empty hidden">ما لقيت شيء. حتى السكربتات هربت.</div>
+    </section>
+
+    <section id="about" class="about">
+      <span class="eyebrow">RTA</span>
+      <h2>RTA Scripter</h2>
+      <p>واجهة بسيطة لإدارة مكتبة السكربتات. أضف سكربتاتك من ملف <code>scripts.js</code> فقط، والموقع يتكفل بالباقي.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 RTA Scripter</span>
+    <span>Made for RTA</span>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
